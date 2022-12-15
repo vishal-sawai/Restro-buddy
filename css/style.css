@@ -1,0 +1,242 @@
+* {
+    padding: 0%;
+    margin: 0%;
+    transition: 0.5ms;
+}
+
+body {
+    background-color: #fff6f6;
+}
+
+#load {
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    z-index: 9999;
+    background: url("../img/load.gif") no-repeat center center white;
+}
+
+/* Heading */
+.seven h1 {
+    text-align: center;
+    font-size: 30px;
+    font-weight: bold;
+    color: rgb(255, 0, 0);
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    display: grid;
+    grid-template-columns: 1fr max-content 1fr;
+    grid-template-rows: 27px 0;
+    grid-gap: 20px;
+    align-items: center;
+    padding-bottom: 15px;
+    padding-top: 55px;
+    margin: auto;
+    width: 80%;
+}
+
+.seven h1:after, .seven h1:before {
+    content: " ";
+    display: block;
+    border-top: 1px solid darkblue;
+    border-bottom: 1px solid darkblue;
+    height: 5px;
+}
+
+/* Navbar */
+.navbar {
+    background-color: white !important;
+}
+
+.nav-section a {
+    margin: 0px 8px;
+    font-weight: 500;
+    padding: 2px 4px;
+}
+
+.nav-section a, .nav-section a:hover {
+    color: #000;
+}
+
+.nav-section li {
+    display: inline-block;
+    position: relative;
+    padding-bottom: 3px;
+    margin-right: 10px;
+}
+
+.nav-section li:last-child {
+    margin-right: 0;
+}
+
+.nav-section li:after {
+    content: '';
+    display: block;
+    margin: auto;
+    height: 3px;
+    width: 0px;
+    background: transparent;
+    transition: width .5s ease, background-color .5s ease;
+}
+
+.nav-section li:hover:after {
+    width: 100%;
+    background: rgb(255, 3, 3);
+}
+
+/* Slider */
+.slider-down-btn button {
+    width: 15px !important;
+    height: 15px !important;
+    border-radius: 50%;
+    margin: 0px 6px !important;
+}
+
+.home-slider {
+    margin-top: 105px;
+}
+
+
+/* Service */
+.formerror {
+    color: red;
+}
+
+.s-card {
+    border-radius: 5%;
+    border: none;
+    cursor: pointer;
+    transition: 0.5s;
+    font-weight: bolder;
+    background-color: white;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.s-card img {
+    border-radius: 5%;
+}
+
+.s-card:hover {
+    background-color: rgb(255, 28, 28);
+    color: white;
+}
+
+.s-card-footer2 {
+    display: none;
+}
+
+.s-card:hover .s-card-footer2 {
+    display: block;
+}
+
+.s-card:hover .s-card-footer1 {
+    display: none;
+}
+
+
+/* Testimonial */
+.test-img {
+    width: 100px;
+    height: 100px;
+}
+
+.testimonial-card {
+    border: none !important;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+
+/* About Us */
+.aboutinfo {
+    padding: 80px 30px;
+}
+
+/* Contatct Us */
+.contact-page {
+    background-color: white;
+}
+
+.cform {
+    width: 50%;
+}
+
+.contact-page {
+    width: 80%;
+}
+
+.contact-info {
+    width: 500px;
+}
+
+.media {
+    margin-top: 70px;
+}
+
+.instagram {
+    background: #f09433;
+    background: -moz-linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%);
+    background: -webkit-linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%);
+    background: linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#f09433', endColorstr='#bc1888', GradientType=1);
+}
+
+.facebook {
+    background-color: #4267B2;
+}
+
+.phone {
+    background-color: yellowgreen;
+}
+
+.instagram, .facebook, .phone {
+    font-size: 30px;
+}
+
+.instagram:hover, .facebook:hover, .phone:hover {
+    filter: brightness(0.5);
+}
+
+@media only screen and (max-width: 1075px) {
+
+    /* Heading */
+    .seven h1 {
+        padding-bottom: 10px;
+        padding-top: 20px;
+    }
+
+    /* About Us */
+    .aboutinfo {
+        padding: 30px 30px;
+    }
+
+    /* contact us */
+    .cform {
+        width: 90%;
+    }
+
+    .contact-page {
+        width: 100%;
+        padding: 30px 10px !important;
+    }
+
+    .contact-info {
+        width: 90%;
+        padding: 5px 10px !important;
+        margin-bottom: 10px;
+
+    }
+
+    .instagram, .facebook, .phone {
+        font-size: 15px;
+    }
+
+    .media {
+        display: flex;
+        margin-top: 0px;
+    }
+
+    .facebook, .instagram, .phone {
+        padding: 5px 10px !important;
+        margin: 0px 0px !important;
+    }
+
+}
